@@ -23,11 +23,11 @@ app.use(bodyParser.json({ limit: '50mb' }));
 
 let dev_db_url = 'mongodb+srv://sathish:hfvqi0ZP8c7cpqWQ@cluster0.urej5qj.mongodb.net/book';
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
-var options = {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-};
-mongoose.connect(mongoDB, options);
+// var options = {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// };
+mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
