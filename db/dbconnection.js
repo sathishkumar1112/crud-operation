@@ -32,4 +32,3 @@ const connectDB = async () => {
 
 module.exports = connectDB;
 // https://wild-red-coral-shoe.cyclic.app
-// https://wild-red-coral-shoe.cyclic.app
